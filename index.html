@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K. Sathish Kumar | Elite Badminton Athlete & TOPS 2028 Prospect</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    
+    /* Metallic Medal Styling */
+    .medal-gold {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      color: #78350f;
+      border: 1px solid #f59e0b;
+    }
+    .medal-silver {
+      background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+      color: #334155;
+      border: 1px solid #94a3b8;
+    }
+    .medal-bronze {
+      background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%);
+      color: #7c2d12;
+      border: 1px solid #ea580c;
+    }
+    .medal-participant {
+      background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+      color: #0369a1;
+      border: 1px solid #38bdf8;
+    }
+
+    /* Subtle Badminton Court Line Overlay Pattern */
+    .badminton-bg-pattern {
+      background-image: radial-gradient(rgba(37, 99, 235, 0.04) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-600 selection:text-white badminton-bg-pattern">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Title Branding with Badminton Shuttlecock & Racket Icon -->
+    <a href="#" class="font-heading font-extrabold text-xl sm:text-2xl tracking-wider text-slate-900 flex items-center space-x-2.5">
+<span class="w-9 h-9 rounded-xl overflow-hidden flex items-center justify-center shadow-md">
+  <svg class="w-7 h-7" viewBox="0 0 24 24"
+       xmlns="http://www.w3.org/2000/svg">
+    <!-- Saffron stripe -->
+    <rect x="2" y="4" width="20" height="5.33" fill="#FF9933"/>
+    <!-- White stripe -->
+    <rect x="2" y="9.33" width="20" height="5.34" fill="#FFFFFF"/>
+    <!-- Green stripe -->
+    <rect x="2" y="14.67" width="20" height="5.33" fill="#138808"/>
+    <!-- Navy blue Ashoka Chakra -->
+    <circle cx="12" cy="12" r="2.45"
+            fill="none" stroke="#000080" stroke-width="0.65"/>
+    <circle cx="12" cy="12" r="0.35" fill="#000080"/>
+    <g stroke="#000080" stroke-width="0.4">
+      <path d="M12 9.55V14.45 M9.55 12H14.45
+               M10.27 10.27L13.73 13.73
+               M13.73 10.27L10.27 13.73"/>
+    </g>
+  </svg>
+</span>
+  <span>SATHISH <span class="text-blue-600">KUMAR</span></span>
+</a>
+
+      <div class="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-600">
+        <a href="#about" class="hover:text-blue-600 transition">About</a>
+        <a href="#rankings" class="hover:text-blue-600 transition">Rankings</a>
+        <a href="#achievements-tabs" onclick="switchTab('recent')" class="hover:text-blue-600 transition">Recent Victories</a>
+        <a href="#achievements-tabs" onclick="switchTab('represented')" class="hover:text-blue-600 transition">Represented</a>
+        <a href="#achievements-tabs" onclick="switchTab('archive')" class="hover:text-blue-600 transition">Archive</a>
+        <a href="#contact-section" class="px-5 py-2.5 rounded-full bg-blue-600 text-white font-bold hover:bg-blue-700 transition shadow-md shadow-blue-500/20">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="pt-32 pb-16 md:pt-40 md:pb-24 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+    <div class="md:col-span-7 space-y-6">
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-widest">
+        <i class="fa-solid fa-trophy text-amber-500"></i> <span>TOPS 2028 Olympic Medal Prospect</span>
+      </div>
+      <h1 class="font-heading text-4xl sm:text-6xl font-black tracking-tight leading-none text-slate-900">
+        K. SATHISH <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">KUMAR</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600 max-w-xl font-normal leading-relaxed">
+        International Badminton Champion. Every sacrifice I make, every limit I break, brings me closer to the dream I carry in my heart — to represent my nation on the Olympic stage and turn my lifelong passion into a legacy.
+      </p>
+      <div class="flex flex-wrap gap-4 pt-2">
+        <a href="#contact-section" class="px-8 py-4 rounded-xl bg-blue-600 text-white font-extrabold hover:bg-blue-700 transition shadow-lg shadow-blue-600/20">
+          Sponsorship & Contact
+        </a>
+        <a href="#achievements-tabs" class="px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold transition border border-slate-300 shadow-sm">
+          View Achievements
+        </a>
+      </div>
+    </div>
+    <div class="md:col-span-5 flex justify-center">
+      <div class="relative w-full max-w-sm h-[420px] rounded-2xl overflow-hidden border-2 border-slate-200 shadow-xl bg-white">
+        <img src="satz_indian_court.jpg" alt="K. Sathish Kumar on Badminton Court" class="w-full h-full object-contain object-top bg-slate-100">
+        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/80 p-4 text-center">
+          <span class="text-xs uppercase tracking-widest text-blue-300 font-bold">Sathish Kumar Karunakaran</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE BWF RANKINGS -->
+  <section id="rankings" class="border-y border-slate-200 bg-white py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Official Standing</span>
+        <h2 class="font-heading text-3xl font-bold text-slate-900 mt-1">Live Global Badminton Standings</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+          <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">BWF Men's Singles</p>
+          <p class="text-3xl font-heading font-black text-blue-600 mt-2">#123 <span class="text-xs font-normal text-slate-500">(Peak #42)</span></p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+          <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">BWF Mixed Doubles</p>
+          <p class="text-3xl font-heading font-black text-blue-600 mt-2">#92 <span class="text-xs font-normal text-slate-500">(Peak #30)</span></p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+          <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">National Senior Rank</p>
+          <p id="national-senior-rank" class="text-3xl font-heading font-black text-amber-600 mt-2">Loading...</p>
+          <p id="national-senior-rank-updated" class="text-xs text-slate-500 mt-2">Checking official rankings...</p>
+          <a href="https://www.badmintonindia.org/beta/players/rankings/senior/" target="_blank" rel="noopener noreferrer" class="inline-block text-xs text-blue-600 hover:underline mt-2">View Badminton Association of India rankings</a>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+          <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Official BWF ID</p>
+          <p class="text-3xl font-heading font-black text-slate-800 mt-2">79164</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-5">
+        <div class="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-white h-[420px]">
+          <img src="satz_indian_flag.png" alt="Sathish Kumar Portrait" class="w-full h-full object-contain object-top">
+        </div>
+      </div>
+      <div class="md:col-span-7 space-y-6">
+        <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Athlete Profile</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-900">Relentless Pursuit of Badminton Excellence</h2>
+        <p class="text-slate-600 leading-relaxed">
+          My journey in professional badminton is built on aggressive court coverage, deceptive net play, and tactical endurance. Every training cycle is designed to compete and excel at the highest level of international BWF World Tour events.
+        </p>
+        <p class="text-slate-600 leading-relaxed text-sm">
+          <strong class="text-slate-900">Foundational Athleticism:</strong> My early competitive experience in sea swimming and yoga artist championships provided an exceptionally high cardiovascular baseline, flexibility, and core composure on court.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-900 mb-1">World Junior Background</h3>
+            <p class="text-sm text-slate-600">World Junior #48, India U19 #2, and continuous international BWF podium finishes.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-slate-900 mb-1">TOPS 2028 Selection</h3>
+            <p class="text-sm text-slate-600">Selected under Government of India's Target Olympic Podium Scheme for Los Angeles 2028.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS TABBED INTERFACE -->
+  <section id="achievements-tabs" class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Detailed Career Record</span>
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-900 mt-1">Championship Achievements & Milestones</h2>
+      <p class="text-slate-600 mt-2">Click on any achievement card to view full details (Singles vs Mixed Doubles, partner, location, and match details).</p>
+    </div>
+
+    <!-- TAB BUTTONS -->
+    <div class="flex flex-wrap justify-center gap-3 mb-12 border-b border-slate-200 pb-4">
+      <button id="btn-recent" onclick="switchTab('recent')" class="px-6 py-3 rounded-xl font-bold text-sm transition bg-blue-600 text-white shadow-md shadow-blue-500/20">
+        <i class="fa-solid fa-trophy mr-2 text-amber-300"></i> Recent Victories (2026–2024)
+      </button>
+      <button id="btn-represented" onclick="switchTab('represented')" class="px-6 py-3 rounded-xl font-bold text-sm transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-300">
+        <i class="fa-solid fa-earth-americas mr-2 text-blue-600"></i> Represented Tournaments
+      </button>
+      <button id="btn-archive" onclick="switchTab('archive')" class="px-6 py-3 rounded-xl font-bold text-sm transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-300">
+        <i class="fa-solid fa-clock-rotate-left mr-2 text-slate-600"></i> Previous Achievements (2023 & Prior)
+      </button>
+    </div>
+
+    <!-- TAB 1: RECENT VICTORIES (2026 - 2024) -->
+    <div id="tab-recent" class="tab-content active space-y-12">
+      <!-- 2026 -->
+      <div>
+        <div class="flex items-center space-x-4 mb-6">
+          <h3 class="text-2xl font-black text-blue-600">2026</h3>
+          <div class="flex-grow h-px bg-slate-300"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div onclick="openModal('I Feel Slovenia Li-Ning Open 2026', '2026', 'Gold Medal', 'Men\'s Singles & Mixed Doubles', 'Slovenia', 'International BWF Challenge', 'Secured double title victory in both Men\'s Singles and Mixed Doubles category.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-gold inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Gold Medal
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">I Feel Slovenia Li-Ning Open 2026</h4>
+            <p class="text-sm font-semibold text-blue-600">Men's Singles & Mixed Doubles</p>
+            <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Slovenia • Click for details</p>
+          </div>
+
+          <div onclick="openModal('Austrian Open 2026', '2026', 'Silver Medal', 'Mixed Doubles', 'Graz, Austria', 'International Challenge', 'Runner-up in Mixed Doubles partnering with Aadya Variyath in a close 3-set final.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-silver inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Silver Medal
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">Austrian Open 2026</h4>
+            <p class="text-sm font-semibold text-slate-700">Mixed Doubles (w/ Aadya Variyath)</p>
+            <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Graz, Austria • Click for details</p>
+          </div>
+
+          <div onclick="openModal('Yonex-Sunrise All India Senior Ranking 2026', '2026', 'Gold Medal', 'Mixed Doubles', 'Cochin, Kerala', 'National Senior Ranking', 'Champion in Mixed Doubles at Cochin Senior National Ranking tournament.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-gold inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Gold Medal
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">All India Senior Ranking 2026</h4>
+            <p class="text-sm font-semibold text-blue-600">Mixed Doubles</p>
+            <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Cochin, Kerala • Click for details</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2025 -->
+      <div>
+        <div class="flex items-center space-x-4 mb-6">
+          <h3 class="text-2xl font-black text-blue-600">2025</h3>
+          <div class="flex-grow h-px bg-slate-300"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div onclick="openModal('38th National Games Uttarakhand', '2025', 'Gold Medal', 'Men\'s Singles & Mixed Doubles', 'Uttarakhand, India', 'National Games', 'Double Gold champion representing Tamil Nadu in Men\'s Singles and Mixed Doubles.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-gold inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Gold Medal (Double)
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">38th National Games Uttarakhand</h4>
+            <p class="text-sm font-semibold text-blue-600">Men's Singles & Mixed Doubles</p>
+            <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Uttarakhand • Click for details</p>
+          </div>
+
+          <div onclick="openModal('Rhine-Ruhr World University Games', '2025', 'Bronze Medal', 'Mixed Team / Singles', 'Germany', 'World University Games', 'Historical first-ever badminton medal for India at FISU World University Games. Team Captain.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-bronze inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Bronze Medal
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">Rhine-Ruhr World University Games</h4>
+            <p class="text-sm font-semibold text-orange-700">Mixed Team / Men's Singles</p>
+            <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Germany • Click for details</p>
+          </div>
+
+          <div onclick="openModal('BWF Sudirman Cup & All England Open', '2025', 'Official Representation', 'Mixed Team / Men\'s Singles', 'Xiamen (China) & London (UK)', 'BWF Grade 1 Championship', 'Represented Indian Senior National Team on major international Grade 1 tour stages.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-participant inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-flag"></i> Team India
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">Sudirman Cup & All England 2025</h4>
+            <p class="text-sm font-semibold text-sky-700">Men's Singles & Mixed Team</p>
+            <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> China / UK • Click for details</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div>
+        <div class="flex items-center space-x-4 mb-6">
+          <h3 class="text-2xl font-black text-blue-600">2024</h3>
+          <div class="flex-grow h-px bg-slate-300"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div onclick="openModal('Yonex-Sunrise Guwahati Masters', '2024', 'Gold Medal', 'Men\'s Singles', 'Guwahati, India', 'BWF Super 100', 'Champion in Men\'s Singles at BWF Super 100 Tour Event.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-gold inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Gold Medal
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">Guwahati Masters (Super 100)</h4>
+            <p class="text-sm font-semibold text-blue-600">Men's Singles</p>
+            <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Assam, India • Click for details</p>
+          </div>
+
+          <div onclick="openModal('32nd Iran Fajr International Challenge', '2024', 'Gold & Silver', 'Mixed Doubles & Men\'s Singles', 'Iran', 'International Challenge', 'Gold Medal in Mixed Doubles and Silver Medal in Men\'s Singles.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-gold inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Gold & Silver
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">32nd Iran Fajr International</h4>
+            <p class="text-sm font-semibold text-slate-700">Mixed Doubles (Gold) & Men's Singles (Silver)</p>
+            <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Iran • Click for details</p>
+          </div>
+
+          <div onclick="openModal('Azerbaijan & Uganda International 2024', '2024', 'Gold Medals', 'Mixed Doubles', 'Baku & Kampala', 'International Challenge', 'Back-to-back international title wins in Mixed Doubles.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-gold inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Gold Medals
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">Azerbaijan & Uganda International</h4>
+            <p class="text-sm font-semibold text-blue-600">Mixed Doubles</p>
+            <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Azerbaijan / Uganda • Click for details</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: REPRESENTED TOURNAMENTS WITH COUNTRY FLAGS -->
+    <div id="tab-represented" class="tab-content space-y-8">
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-8 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-8 space-y-3">
+          <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-bold uppercase tracking-wider">World Stage</span>
+          <h3 class="text-2xl font-bold text-slate-900">Official Indian Senior Team Representation</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Representing India across Grade 1 and Grade 2 BWF major championships worldwide. Click any card for detailed match statistics and category participation.
+          </p>
+        </div>
+        <div class="md:col-span-4 h-48 rounded-xl overflow-hidden border border-blue-200 bg-white">
+          <img src="satz_sudirman_cup.jpg" alt="Sudirman Cup Representation" class="w-full h-full object-contain object-top">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Sudirman Cup China -->
+        <div onclick="openModal('BWF Sudirman Cup Finals 2025', '2025', 'Indian National Team', 'Mixed Team', 'Xiamen, China 🇨🇳', 'BWF Grade 1 World Team Championship', 'Selected in core Senior Indian National Squad for the World Mixed Team Championships in Xiamen, China.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer space-y-3 hover:border-blue-400">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-bold px-2.5 py-1 rounded bg-red-100 text-red-700 flex items-center gap-1.5">
+              <svg class="w-4 h-3 rounded-xs" viewBox="0 0 640 480"><path fill="#de2910" d="M0 0h640v480H0z"/><path fill="#ffde00" d="M120 160l23.5 72.3H219l-61.2 44.5 23.4 72.3-61.2-44.5-61.2 44.5 23.4-72.3-61.2-44.5h75.5z"/></svg>
+              China 🇨🇳
+            </span>
+            <span class="text-xs text-slate-400 font-semibold">2025</span>
+          </div>
+          <h4 class="font-bold text-slate-900 text-lg">BWF Sudirman Cup Finals</h4>
+          <p class="text-sm font-semibold text-blue-600">Category: Mixed Team (Senior National Team)</p>
+          <p class="text-xs text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i> Xiamen, China • Click for details</p>
+        </div>
+
+        <!-- All England UK -->
+        <div onclick="openModal('Yonex All England Open 2025', '2025', 'Official Entry', 'Men\'s Singles', 'London, United Kingdom 🇬🇧', 'BWF World Tour Super 1000', 'Represented India in Men\'s Singles at the world\'s oldest badminton tournament in Birmingham/London.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer space-y-3 hover:border-blue-400">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-bold px-2.5 py-1 rounded bg-blue-100 text-blue-800 flex items-center gap-1.5">
+              <svg class="w-4 h-3 rounded-xs" viewBox="0 0 640 480"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#FFF" d="m75 0 245 180L565 0h75v55L400 240l240 185v55h-75L320 300 75 480H0v-55l240-185L0 55V0h75z"/><path fill="#C8102E" d="m424 282 216 163v35h-46L380 318l44-36zM640 0v15L454 155l-44-35L594 0h46zM0 480v-15l186-140 44 35L46 480H0zM0 0v35l186 140 44-35L46 0H0z"/><path fill="#FFF" d="M240 0v480h160V0H240zM0 160v160h640V160H0z"/><path fill="#C8102E" d="M272 0v480h96V0h-96zM0 192v96h640v-96H0z"/></svg>
+              United Kingdom 🇬🇧
+            </span>
+            <span class="text-xs text-slate-400 font-semibold">2025</span>
+          </div>
+          <h4 class="font-bold text-slate-900 text-lg">Yonex All England Open</h4>
+          <p class="text-sm font-semibold text-blue-600">Category: Men's Singles</p>
+          <p class="text-xs text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i> London, UK • Click for details</p>
+        </div>
+
+        <!-- World University Games Germany -->
+        <div onclick="openModal('Rhine-Ruhr World University Games', '2025', 'Bronze Medal (Captain)', 'Mixed Team & Men\'s Singles', 'Rhine-Ruhr, Germany 🇩🇪', 'FISU World University Championship', 'Captained Indian university badminton contingent and earned India\'s first-ever badminton medal in Germany.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer space-y-3 hover:border-blue-400">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-bold px-2.5 py-1 rounded bg-amber-100 text-amber-900 flex items-center gap-1.5">
+              <svg class="w-4 h-3 rounded-xs" viewBox="0 0 640 480"><path d="M0 0h640v160H0z"/><path fill="#D00" d="M0 160h640v160H0z"/><path fill="#FFCE00" d="M0 320h640v160H0z"/></svg>
+              Germany 🇩🇪
+            </span>
+            <span class="text-xs text-slate-400 font-semibold">2025</span>
+          </div>
+          <h4 class="font-bold text-slate-900 text-lg">World University Games</h4>
+          <p class="text-sm font-semibold text-orange-700">Category: Mixed Team (Bronze) & Men's Singles</p>
+          <p class="text-xs text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i> Germany • Click for details</p>
+        </div>
+
+        <!-- World Junior Russia -->
+        <div onclick="openModal('BWF World Junior Championships', '2019', 'Quarterfinalist', 'Men\'s Singles', 'Kazan, Russia 🇷🇺', 'BWF World Junior Championship', 'Reached World Junior Quarterfinals representing India as World Junior #48.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer space-y-3 hover:border-blue-400">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-bold px-2.5 py-1 rounded bg-slate-100 text-slate-800 flex items-center gap-1.5">
+              <svg class="w-4 h-3 rounded-xs" viewBox="0 0 640 480"><path fill="#fff" d="M0 0h640v160H0z"/><path fill="#0039a6" d="M0 160h640v160H0z"/><path fill="#d52b1e" d="M0 320h640v160H0z"/></svg>
+              Russia 🇷🇺
+            </span>
+            <span class="text-xs text-slate-400 font-semibold">2019</span>
+          </div>
+          <h4 class="font-bold text-slate-900 text-lg">BWF World Junior Championships</h4>
+          <p class="text-sm font-semibold text-blue-600">Category: Men's Singles (Quarterfinalist)</p>
+          <p class="text-xs text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i> Kazan, Russia • Click for details</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: PREVIOUS ACHIEVEMENTS (2023 & PRIOR) -->
+    <div id="tab-archive" class="tab-content space-y-12">
+      <!-- 2023 -->
+      <div>
+        <h3 class="text-2xl font-black text-amber-700 mb-6">2023 Achievements</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div onclick="openModal('Odisha Masters Super 100 2023', '2023', 'Gold Medal', 'Men\'s Singles', 'Cuttack, India', 'BWF Super 100', 'Gold medal in Men\'s Singles at BWF Super 100 Odisha Masters.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-gold inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Gold Medal
+            </span>
+            <h4 class="text-base font-bold text-slate-900 mt-3">Odisha Masters (Super 100)</h4>
+            <p class="text-sm font-semibold text-blue-600">Men's Singles</p>
+          </div>
+
+          <div onclick="openModal('Chhattisgarh India International 2023', '2023', 'Gold Medals', 'Men\'s Singles & Mixed Doubles', 'Raipur, India', 'International Challenge', 'Double Gold champion in Men\'s Singles and Mixed Doubles.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-gold inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Gold Medals
+            </span>
+            <h4 class="text-base font-bold text-slate-900 mt-3">Chhattisgarh India International</h4>
+            <p class="text-sm font-semibold text-blue-600">Men's Singles & Mixed Doubles</p>
+          </div>
+
+          <div onclick="openModal('Infosys Foundation India International 2023', '2023', 'Gold Medal', 'Men\'s Singles', 'Bengaluru, India', 'International Challenge', 'Gold medal in Men\'s Singles in Bengaluru.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-gold inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Gold Medal
+            </span>
+            <h4 class="text-base font-bold text-slate-900 mt-3">Infosys Foundation International</h4>
+            <p class="text-sm font-semibold text-blue-600">Men's Singles</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2022 & PRIOR -->
+      <div>
+        <h3 class="text-2xl font-black text-amber-700 mb-6">2022 & Earlier Career Milestones</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div onclick="openModal('Cameroon International 2022', '2022', 'Gold & Silver', 'Men\'s Singles & Mixed Doubles', 'Yaoundé, Cameroon', 'International Series', 'Gold in Men\'s Singles and Silver in Mixed Doubles.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-gold inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Gold & Silver
+            </span>
+            <h4 class="text-base font-bold text-slate-900 mt-3">Cameroon International 2022</h4>
+            <p class="text-sm font-semibold text-slate-700">Men's Singles (Gold) & Mixed Doubles (Silver)</p>
+          </div>
+
+          <div onclick="openModal('Victor Ukraine & Hungarian International 2021', '2021', 'Silver Medals', 'Men\'s Singles', 'Ukraine / Hungary', 'European Circuit', 'Silver medals in European international challenge circuit.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-silver inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Silver Medals
+            </span>
+            <h4 class="text-base font-bold text-slate-900 mt-3">Ukraine & Hungarian Open 2021</h4>
+            <p class="text-sm font-semibold text-slate-700">Men's Singles</p>
+          </div>
+
+          <div onclick="openModal('SGFI National School Games U-17', '2016', 'Gold Medal', 'Under-17 Men\'s Singles', 'India', 'National Games', 'Under-17 All-India National Champion in Men\'s Singles.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
+            <span class="px-3 py-1 rounded-full text-xs font-bold medal-gold inline-flex items-center gap-1.5">
+              <i class="fa-solid fa-medal"></i> Gold Medal
+            </span>
+            <h4 class="text-base font-bold text-slate-900 mt-3">SGFI National School Games</h4>
+            <p class="text-sm font-semibold text-blue-600">Under-17 Men's Singles Gold</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATED CONTACT SECTION WITH FORMSPREE AUTO-CLEARING AJAX FORM -->
+  <section id="contact-section" class="py-20 px-6 bg-slate-100 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+        <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-900">Contact & Sponsorship Proposals</h2>
+        <p class="text-slate-600">For brand endorsements, media inquiries, and official sponsorship proposals.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Direct Contact Info Cards -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center space-x-5">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 font-semibold uppercase">Phone / WhatsApp</p>
+              <a href="tel:7339007788" class="text-lg font-bold text-slate-900 hover:text-blue-600 transition">+91 7339007788</a>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center space-x-5">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 font-semibold uppercase">Official Email</p>
+              <a href="mailto:sathish.k2098@gmail.com" class="text-lg font-bold text-slate-900 hover:text-blue-600 transition">sathish.k2098@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center space-x-5">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 font-semibold uppercase">Instagram Profile</p>
+              <a href="https://instagram.com/sathish5467" target="_blank" class="text-lg font-bold text-slate-900 hover:text-blue-600 transition">@sathish5467</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formspree AJAX Form with Auto-Reset & Success Alert Banner -->
+        <div class="lg:col-span-7 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+          <h3 class="text-xl font-bold text-slate-900 mb-6">Send a Direct Message</h3>
+
+          <!-- Sleek Success Banner (Hidden by default) -->
+          <div id="form-success-banner" class="hidden mb-6 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm flex items-start space-x-3">
+            <i class="fa-solid fa-circle-check text-emerald-600 text-lg mt-0.5"></i>
+            <div>
+              <h4 class="font-bold">Message Sent Successfully!</h4>
+              <p class="text-emerald-700 text-xs mt-1">Thank you for getting in touch. Your proposal has been received and Sathish's management team will respond shortly.</p>
+            </div>
+          </div>
+
+          <!-- Error Alert Banner (Hidden by default) -->
+          <div id="form-error-banner" class="hidden mb-6 p-4 rounded-xl bg-rose-50 border border-rose-200 text-rose-800 text-sm flex items-start space-x-3">
+            <i class="fa-solid fa-circle-exclamation text-rose-600 text-lg mt-0.5"></i>
+            <div>
+              <h4 class="font-bold">Submission Error</h4>
+              <p class="text-rose-700 text-xs mt-1">There was an issue sending your message. Please check your internet connection or email directly at sathish.k2098@gmail.com.</p>
+            </div>
+          </div>
+
+          <form id="enquiry-form" action="https://formspree.io/f/meaeknrz" method="POST" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-600 mb-1">Your Name</label>
+                <input type="text" name="name" required placeholder="Eg:sathish kumar" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-600 mb-1">Email Address</label>
+                <input type="email" name="email" required placeholder="sathish@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 text-sm">
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 mb-1">Subject / Company</label>
+              <input type="text" name="subject" required placeholder="Sponsorship / Endorsement Proposal" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 mb-1">Message</label>
+              <textarea name="message" rows="4" required placeholder="Describe your brand opportunity or inquiry..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 text-sm"></textarea>
+            </div>
+            <button id="submit-btn" type="submit" class="w-full py-3.5 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 transition shadow-md shadow-blue-500/20 flex items-center justify-center space-x-2">
+              <span id="btn-text">Submit Inquiry</span>
+              <i id="btn-spinner" class="fa-solid fa-spinner fa-spin hidden"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-8 px-6 text-center text-sm">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between">
+      <p>&copy; 2026 Santhosh Kumar K. All Rights Reserved.</p>
+      <p class="mt-2 sm:mt-0">TOPS 2028 Prospect • Indian Senior Badminton Team</p>
+    </div>
+  </footer>
+
+  <!-- BADMINTON SHUTTLECOCK BACK-TO-TOP BUTTON -->
+  <button
+    id="back-to-top"
+    type="button"
+    aria-label="Back to top"
+    title="Back to top"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-blue-600 text-white shadow-xl shadow-blue-600/30 hover:bg-blue-700 hover:-translate-y-1 transition-all duration-200 flex items-center justify-center border-2 border-white/80 focus:outline-none focus:ring-4 focus:ring-blue-300"
+  >
+    <!-- Simple shuttlecock / feather cork mark -->
+    <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M11 7C16 8 22 12 27 19L35 31L28 38L16 30C9 25 5 19 5 14C5 10 7 7 11 7Z" fill="currentColor" fill-opacity="0.22" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M11 8L28 37M17 11L13 25M23 16L17 29M29 24L22 33" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M28 38L35 31L41 36L35 42L28 38Z" fill="#FDE68A" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- DETAIL POPUP MODAL -->
+  <div id="modal-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white max-w-lg w-full rounded-2xl p-6 shadow-2xl border border-slate-200 relative animate-in fade-in duration-200">
+      <button onclick="closeModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 text-slate-500 hover:text-slate-900 flex items-center justify-center">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="space-y-4">
+        <span id="modal-badge" class="px-3 py-1 rounded-full text-xs font-bold inline-block">Medal</span>
+        <h3 id="modal-title" class="text-2xl font-bold text-slate-900">Tournament Title</h3>
+        
+        <div class="grid grid-cols-2 gap-3 text-xs bg-slate-50 p-4 rounded-xl border border-slate-200">
+          <div>
+            <span class="text-slate-400 uppercase font-bold block">Category</span>
+            <span id="modal-category" class="font-bold text-blue-600 text-sm">Men's Singles</span>
+          </div>
+          <div>
+            <span class="text-slate-400 uppercase font-bold block">Year</span>
+            <span id="modal-year" class="font-bold text-slate-800 text-sm">2026</span>
+          </div>
+          <div>
+            <span class="text-slate-400 uppercase font-bold block">Location</span>
+            <span id="modal-location" class="font-bold text-slate-800 text-sm">Location</span>
+          </div>
+          <div>
+            <span class="text-slate-400 uppercase font-bold block">Level</span>
+            <span id="modal-level" class="font-bold text-slate-800 text-sm">BWF Challenge</span>
+          </div>
+        </div>
+
+        <div>
+          <span class="text-xs uppercase font-bold text-slate-400 block mb-1">Match & Performance Details</span>
+          <p id="modal-desc" class="text-sm text-slate-600 leading-relaxed bg-blue-50/50 p-3 rounded-lg border border-blue-100">Details</p>
+        </div>
+
+        <button onclick="closeModal()" class="w-full py-2.5 rounded-xl bg-slate-900 text-white font-bold text-sm hover:bg-slate-800 transition mt-2">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT CONTROLLERS -->
+  <script>
+
+    // National Senior Rank: refresh every 12 hours.
+    // The official Badminton Association of India page may block browser requests (CORS).
+    // Configure the optional same-origin / serverless endpoint described below for reliable fetching.
+    const NATIONAL_RANK_URL = "https://www.badmintonindia.org/beta/players/rankings/senior/";
+    const NATIONAL_RANK_ENDPOINT = "/.netlify/functions/national-senior-rank";
+    const NATIONAL_RANK_REFRESH_MS = 12 * 60 * 60 * 1000;
+    const nationalRankElement = document.getElementById("national-senior-rank");
+    const nationalRankUpdatedElement = document.getElementById("national-senior-rank-updated");
+
+    async function refreshNationalSeniorRank() {
+      try {
+        const response = await fetch(NATIONAL_RANK_ENDPOINT, {
+          headers: { "Accept": "application/json" },
+          cache: "no-store"
+        });
+        if (!response.ok) throw new Error("Rank service returned HTTP " + response.status);
+        const result = await response.json();
+        if (!result || !result.rank) throw new Error("Rank was not present in the response");
+
+        nationalRankElement.textContent = "India #" + result.rank;
+        nationalRankUpdatedElement.textContent = "Last checked: " +
+          new Date(result.updatedAt || Date.now()).toLocaleString("en-IN");
+      } catch (error) {
+        nationalRankElement.textContent = "Unavailable";
+        nationalRankUpdatedElement.textContent = "Could not load live rank. Check the official rankings page.";
+        console.error("National senior ranking refresh failed:", error);
+      }
+    }
+
+    refreshNationalSeniorRank();
+    setInterval(refreshNationalSeniorRank, NATIONAL_RANK_REFRESH_MS);
+
+    // Tab Controller
+    function switchTab(tabName) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      
+      ['recent', 'represented', 'archive'].forEach(name => {
+        const btn = document.getElementById('btn-' + name);
+        btn.className = "px-6 py-3 rounded-xl font-bold text-sm transition bg-white text-slate-700 hover:bg-slate-100 border border-slate-300";
+      });
+
+      document.getElementById('tab-' + tabName).classList.add('active');
+      const activeBtn = document.getElementById('btn-' + tabName);
+      activeBtn.className = "px-6 py-3 rounded-xl font-bold text-sm transition bg-blue-600 text-white shadow-md shadow-blue-500/20";
+    }
+
+    // Modal Controller
+    function openModal(title, year, medal, category, location, level, desc) {
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal-year').innerText = year;
+      document.getElementById('modal-category').innerText = category;
+      document.getElementById('modal-location').innerText = location;
+      document.getElementById('modal-level').innerText = level;
+      document.getElementById('modal-desc').innerText = desc;
+
+      const badge = document.getElementById('modal-badge');
+      badge.innerText = medal;
+
+      if (medal.toLowerCase().includes('gold')) {
+        badge.className = "px-3 py-1 rounded-full text-xs font-bold inline-block medal-gold";
+      } else if (medal.toLowerCase().includes('silver')) {
+        badge.className = "px-3 py-1 rounded-full text-xs font-bold inline-block medal-silver";
+      } else if (medal.toLowerCase().includes('bronze')) {
+        badge.className = "px-3 py-1 rounded-full text-xs font-bold inline-block medal-bronze";
+      } else {
+        badge.className = "px-3 py-1 rounded-full text-xs font-bold inline-block medal-participant";
+      }
+
+      document.getElementById('modal-backdrop').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('modal-backdrop').classList.add('hidden');
+    }
+
+    // Close Modal on backdrop click
+    document.getElementById('modal-backdrop').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+
+    // Formspree Async Submission with Auto-Clear Functionality
+    const form = document.getElementById('enquiry-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const btnSpinner = document.getElementById('btn-spinner');
+    const successBanner = document.getElementById('form-success-banner');
+    const errorBanner = document.getElementById('form-error-banner');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault(); // Prevent full page reload
+      
+      // Hide previous banners
+      successBanner.classList.add('hidden');
+      errorBanner.classList.add('hidden');
+
+      // Loading state on button
+      submitBtn.disabled = true;
+      btnText.innerText = "Sending...";
+      btnSpinner.classList.remove('hidden');
+
+      const data = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          // 1. AUTO-CLEAR THE FORM
+          form.reset();
+          
+          // 2. Show green success banner
+          successBanner.classList.remove('hidden');
+          
+          // Smooth scroll to banner if needed
+          successBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+          errorBanner.classList.remove('hidden');
+        }
+      } catch (error) {
+        errorBanner.classList.remove('hidden');
+      } finally {
+        // Reset button state
+        submitBtn.disabled = false;
+        btnText.innerText = "Submit Inquiry";
+        btnSpinner.classList.add('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>
