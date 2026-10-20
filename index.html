@@ -681,11 +681,11 @@
         setRankText("bwf-xd-points", mixed.points != null && mixed.points !== "" ? Number(mixed.points).toLocaleString("en-IN") + " points" : (mixed.peakRank ? "Peak: #" + mixed.peakRank : ""));
         setRankText("bwf-xd-updated", "Last updated: " + formatRankingDate(mixed.updatedDate));
 
-        setRankText("national-senior-rank", national.rank ? "India #" + national.rank : "Not set");
+        setRankText("national-senior-rank", national.rank ? "#" + national.rank : "Not set");
         setRankText("national-senior-peak", national.peakRank ? "Peak: #" + national.peakRank : "Peak: Not set");
         setRankText("national-senior-rank-updated", "Last updated: " + formatRankingDate(national.updatedDate));
 
-        setRankText("national-mixed-rank", nationalMixed.rank ? "India #" + nationalMixed.rank : "Not set");
+        setRankText("national-mixed-rank", nationalMixed.rank ? "#" + nationalMixed.rank : "Not set");
         setRankText("national-mixed-partners", nationalMixed.partner ? "Partner: " + nationalMixed.partner : "Partner name not set");
         setRankText("national-mixed-peak", nationalMixed.peakRank ? "Peak: #" + nationalMixed.peakRank : "");
         setRankText("national-mixed-rank-updated", "Last updated: " + formatRankingDate(nationalMixed.updatedDate));
