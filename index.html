@@ -569,7 +569,8 @@
             </div>
             <button id="submit-btn" type="submit" class="w-full py-3.5 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 transition shadow-md shadow-blue-500/20 flex items-center justify-center space-x-2">
               <span id="btn-text">Submit Inquiry</span>
-              <i id="btn-spinner" class="fa-solid fa-spinner fa-spin hidden"></i>
+              <i id="btn-spinner" class="fa-solid fa-spinner fa-spin"
+              style="display: none;" aria-hidden="true"></i>
             </button>
           </form>
         </div>
@@ -768,7 +769,7 @@
       // Loading state on button
       submitBtn.disabled = true;
       btnText.innerText = "Sending...";
-      btnSpinner.classList.remove('hidden');
+      btnSpinner.style.display = 'inline-block';
 
       const data = new FormData(form);
 
@@ -799,7 +800,7 @@
         // Reset button state
         submitBtn.disabled = false;
         btnText.innerText = "Submit Inquiry";
-        btnSpinner.classList.add('hidden');
+        btnSpinner.style.display = 'none';
       }
     });
   </script>
