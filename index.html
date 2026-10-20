@@ -257,7 +257,7 @@
               <i class="fa-solid fa-medal"></i> Silver Medal
             </span>
             <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">Austrian Open 2026</h4>
-            <p class="text-sm font-semibold text-slate-700">Mixed Doubles (w/ Aadya Variyath)</p>
+            <p class="text-sm font-semibold text-blue-600">Mixed Doubles (w/ Aadya Variyath)</p>
             <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Graz, Austria • Click for details</p>
           </div>
 
@@ -293,7 +293,7 @@
               <i class="fa-solid fa-medal"></i> Bronze Medal
             </span>
             <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">Rhine-Ruhr World University Games</h4>
-            <p class="text-sm font-semibold text-orange-700">Mixed Team / Men's Singles</p>
+            <p class="text-sm font-semibold text-blue-600">Mixed Team / Men's Singles</p>
             <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Germany • Click for details</p>
           </div>
 
@@ -302,7 +302,7 @@
               <i class="fa-solid fa-flag"></i> Team India
             </span>
             <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">Sudirman Cup & All England 2025</h4>
-            <p class="text-sm font-semibold text-sky-700">Men's Singles & Mixed Team</p>
+            <p class="text-sm font-semibold text-blue-600">Men's Singles & Mixed Team</p>
             <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> China / UK • Click for details</p>
           </div>
         </div>
@@ -329,7 +329,7 @@
               <i class="fa-solid fa-medal"></i> Gold & Silver
             </span>
             <h4 class="text-lg font-bold text-slate-900 mt-3 mb-1">32nd Iran Fajr International</h4>
-            <p class="text-sm font-semibold text-slate-700">Mixed Doubles (Gold) & Men's Singles (Silver)</p>
+            <p class="text-sm font-semibold text-blue-600">Mixed Doubles (Gold) & Men's Singles (Silver)</p>
             <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Iran • Click for details</p>
           </div>
 
@@ -399,7 +399,7 @@
             <span class="text-xs text-slate-400 font-semibold">2025</span>
           </div>
           <h4 class="font-bold text-slate-900 text-lg">World University Games</h4>
-          <p class="text-sm font-semibold text-orange-700">Category: Mixed Team (Bronze) & Men's Singles</p>
+          <p class="text-sm font-semibold text-blue-600">Category: Mixed Team (Bronze) & Men's Singles</p>
           <p class="text-xs text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i> Germany • Click for details</p>
         </div>
 
@@ -460,7 +460,7 @@
               <i class="fa-solid fa-medal"></i> Gold & Silver
             </span>
             <h4 class="text-base font-bold text-slate-900 mt-3">Cameroon International 2022</h4>
-            <p class="text-sm font-semibold text-slate-700">Men's Singles (Gold) & Mixed Doubles (Silver)</p>
+            <p class="text-sm font-semibold text-blue-600">Men's Singles (Gold) & Mixed Doubles (Silver)</p>
           </div>
 
           <div onclick="openModal('Victor Ukraine & Hungarian International 2021', '2021', 'Silver Medals', 'Men\'s Singles', 'Ukraine / Hungary', 'European Circuit', 'Silver medals in European international challenge circuit.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
@@ -468,7 +468,7 @@
               <i class="fa-solid fa-medal"></i> Silver Medals
             </span>
             <h4 class="text-base font-bold text-slate-900 mt-3">Ukraine & Hungarian Open 2021</h4>
-            <p class="text-sm font-semibold text-slate-700">Men's Singles</p>
+            <p class="text-sm font-semibold text-blue-600">Men's Singles</p>
           </div>
 
           <div onclick="openModal('SGFI National School Games U-17', '2016', 'Gold Medal', 'Under-17 Men\'s Singles', 'India', 'National Games', 'Under-17 All-India National Champion in Men\'s Singles.')" class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer hover:border-blue-400">
@@ -553,20 +553,44 @@
           <form id="enquiry-form" action="https://formspree.io/f/meaeknrz" method="POST" class="space-y-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs font-semibold text-slate-600 mb-1">Your Name</label>
-                <input type="text" name="name" required placeholder="Eg:sathish kumar" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 text-sm">
+                <label class="block text-xs font-semibold text-slate-600 mb-1">Your Name  <span class="text-rose-600">*</span></label>
+                <input type="text" name="name" required placeholder="Enter Your Name Here " class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 text-sm">
               </div>
               <div>
-                <label class="block text-xs font-semibold text-slate-600 mb-1">Email Address</label>
-                <input type="email" name="email" required placeholder="sathish@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 text-sm">
+                <label class="block text-xs font-semibold text-slate-600 mb-1">Email Address  <span class="text-rose-600">*</span></label>
+                <input type="email" name="email" required placeholder="Enter Email Address" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 text-sm">
               </div>
             </div>
+            
+<!-- Mandatory Mobile Number -->
+<div>
+  <label for="sponsor-phone" class="block text-xs font-semibold text-slate-600 mb-1">
+    Mobile Number <span class="text-rose-600">*</span>
+  </label>
+
+  <input
+    type="tel"
+    id="sponsor-phone"
+    name="phone"
+    required
+    inputmode="numeric"
+    autocomplete="tel-national"
+    pattern="[0-9]{10}"
+    minlength="10"
+    maxlength="10"
+    placeholder="Enter 10-digit mobile number"
+    title="Mobile number is mandatory. Please enter exactly 10 digits."
+    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)"
+    class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 text-sm"
+  >
+</div>
+
             <div>
-              <label class="block text-xs font-semibold text-slate-600 mb-1">Subject / Company</label>
+              <label class="block text-xs font-semibold text-slate-600 mb-1">Subject / Company  <span class="text-rose-600">*</span> </label>
               <input type="text" name="subject" required placeholder="Sponsorship / Endorsement Proposal" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 text-sm">
             </div>
             <div>
-              <label class="block text-xs font-semibold text-slate-600 mb-1">Message</label>
+              <label class="block text-xs font-semibold text-slate-600 mb-1">Message  <span class="text-rose-600">*</span></label>
               <textarea name="message" rows="4" required placeholder="Describe your brand opportunity or inquiry..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-blue-600 text-sm"></textarea>
             </div>
             <button id="submit-btn" type="submit" class="w-full py-3.5 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 transition shadow-md shadow-blue-500/20 flex items-center justify-center space-x-2">
