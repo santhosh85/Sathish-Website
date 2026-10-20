@@ -82,7 +82,7 @@
     </g>
   </svg>
 </span>
-  <span>SATHISH <span class="text-blue-600">KUMAR</span></span>
+  <span>SATHISH KUMAR<span class="text-blue-600"> KARUNAKARAN</span></span>
 </a>
 
       <div class="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-600">
@@ -123,7 +123,7 @@
       <div class="relative w-full max-w-sm h-[420px] rounded-2xl overflow-hidden border-2 border-slate-200 shadow-xl bg-white">
         <img src="satz_indian_court.jpg" alt="K. Sathish Kumar on Badminton Court" class="w-full h-full object-contain object-top bg-slate-100">
         <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/80 p-4 text-center">
-          <span class="text-xs uppercase tracking-widest text-blue-300 font-bold">Sathish Kumar Karunakaran</span>
+          <!--<span class="text-xs uppercase tracking-widest text-blue-300 font-bold">Sathish Kumar Karunakaran</span>-->
         </div>
       </div>
     </div>
@@ -133,9 +133,11 @@
   <section id="rankings" class="border-y border-slate-200 bg-white py-12 px-6">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">World Ranking</span>
-        <h2 class="font-heading text-3xl font-bold text-slate-900 mt-1">Current Badminton World Rankings</h2>
-        <p class="text-sm text-slate-600 mt-3">BWF and BAI rankings are maintained manually. Update the rank and date in <code>rankings.json</code> whenever you verify a new published ranking. Mixed Doubles rank belongs to a specific partnership.</p>
+        <!--<span class="text-blue-600 text-xs font-bold uppercase tracking-widest">World Ranking</span>-->
+        <h2 class="font-heading text-3xl font-bold text-slate-900 mt-1">Current Badminton Rankings</h2>
+        <p class="text-sm text-slate-600 mt-3"><p class="text-sm text-slate-600 mt-3">
+  Rankings are updated based on the latest officially published data from the Badminton World Federation (BWF) and Badminton Association of India (BAI), subject to the availability of verified ranking information.
+</p></p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
@@ -155,31 +157,29 @@
         </div>
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
           <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">BAI Senior Men’s Singles</p>
-          <p id="national-senior-rank" class="text-3xl font-heading font-black text-amber-600 mt-2">Loading...</p>
+          <p id="national-senior-rank" class="text-3xl font-heading font-black text-blue-600 mt-2">Loading...</p>
           <p id="national-senior-peak" class="text-xs text-slate-500 mt-2">Peak: #1</p>
           <p id="national-senior-rank-updated" class="text-xs text-slate-500 mt-2">Last updated: Date not set</p>
           <a href="https://www.badmintonindia.org/beta/players/rankings/senior/" target="_blank" rel="noopener noreferrer" class="inline-block text-xs text-blue-600 hover:underline mt-2">Badminton Association of India</a>
         </div>
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
           <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">BAI Senior Mixed Doubles</p>
-          <p id="national-mixed-rank" class="text-3xl font-heading font-black text-amber-600 mt-2">Loading...</p>
+          <p id="national-mixed-rank" class="text-3xl font-heading font-black text-blue-600 mt-2">Loading...</p>
           <!--<p id="national-mixed-partners" class="text-xs text-slate-500 mt-2">Partner name not set</p>-->
           <p id="national-mixed-peak" class="text-xs text-slate-500 mt-1"></p>
           <p id="national-mixed-rank-updated" class="text-xs text-slate-500 mt-2">Last updated: Date not set</p>
           <a href="https://www.badmintonindia.org/beta/players/rankings/senior/" target="_blank" rel="noopener noreferrer" class="inline-block text-xs text-blue-600 hover:underline mt-2">Badminton Association of India</a>
         </div>
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
-          <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Player IDs</p>
-          <p class="text-xs text-slate-500 mt-3">BWF ID</p>
-          <p class="text-2xl font-heading font-black text-slate-800">79164</p>
-          <p class="text-xs text-slate-500 mt-3">BAI ID</p>
-          <p class="text-2xl font-heading font-black text-slate-800">12604</p>
-          <p class="text-xs text-slate-500 mt-2">Sathish Kumar Karunakaran</p>
+          <p class="text-xs uppercase tracking-wider text-slate-500 font-bold">Federation ID's</p>
+          <p class="text-xs text-slate-500 font-bold mt-3">BWF ID</p>
+          <p class="text-2xl font-heading font-black text-blue-600 ">79164</p>
+          <p class="text-xs text-slate-500 font-bold mt-3">BAI ID</p>
+          <p class="text-2xl font-heading font-black text-blue-600">12604</p>
+          <!--<p class="text-xs text-slate-500 mt-2">Sathish Kumar Karunakaran</p>-->
         </div>
       </div>
-      <p id="bwf-rank-status" class="text-center text-xs text-slate-500 mt-6" role="status" aria-live="polite">Loading saved ranking values...</p>
-      <p class="text-center text-xs text-slate-400 mt-2">Rankings are updated manually. Dates shown are the dates entered in the ranking data file, not automatic update timestamps.</p>
-    </div>
+      </div>
   </section>
 
   <!-- ABOUT SECTION -->
@@ -197,7 +197,7 @@
           My journey in professional badminton is built on aggressive court coverage, deceptive net play, and tactical endurance. Every training cycle is designed to compete and excel at the highest level of international BWF World Tour events.
         </p>
         <p class="text-slate-600 leading-relaxed text-sm">
-          <strong class="text-slate-900">Foundational Athleticism:</strong> My early competitive experience in sea swimming and yoga artist championships provided an exceptionally high cardiovascular baseline, flexibility, and core composure on court.
+          <strong class="text-slate-900">Foundational Athleticism:</strong> My journey through competitive swimming and yoga has shaped me into a more resilient athlete, building the endurance, flexibility, and mental focus to move with agility, stay composed under pressure, and compete with confidence on the badminton court.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
           <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
@@ -587,21 +587,30 @@
   </footer>
 
   <!-- BADMINTON SHUTTLECOCK BACK-TO-TOP BUTTON -->
+
+
+<div class="fixed bottom-6 right-6 z-40 flex flex-col items-center gap-1">
+  <span
+    style="color: #2563eb; font-size: 11px; font-weight: 700; line-height: 14px; white-space: nowrap;"
+  >PAGE TOP</span>
+
   <button
     id="back-to-top"
     type="button"
-    aria-label="Back to top"
-    title="Back to top"
+    aria-label="Page top"
+    title="Page top"
     onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-    class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-blue-600 text-white shadow-xl shadow-blue-600/30 hover:bg-blue-700 hover:-translate-y-1 transition-all duration-200 flex items-center justify-center border-2 border-white/80 focus:outline-none focus:ring-4 focus:ring-blue-300"
+    class="w-14 h-14 rounded-full bg-blue-600 shadow-xl shadow-blue-600/30 hover:bg-blue-700 hover:-translate-y-1 transition-all duration-200 flex items-center justify-center border-2 border-white/80 focus:outline-none focus:ring-4 focus:ring-blue-300 p-1"
   >
-    <!-- Simple shuttlecock / feather cork mark -->
-    <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M11 7C16 8 22 12 27 19L35 31L28 38L16 30C9 25 5 19 5 14C5 10 7 7 11 7Z" fill="currentColor" fill-opacity="0.22" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-      <path d="M11 8L28 37M17 11L13 25M23 16L17 29M29 24L22 33" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-      <path d="M28 38L35 31L41 36L35 42L28 38Z" fill="#FDE68A" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-    </svg>
+    <img
+      src="./Top_icon.png"
+      alt=""
+      style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%; display: block;"
+    >
   </button>
+</div>
+
+
 
   <!-- DETAIL POPUP MODAL -->
   <div id="modal-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
