@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>K. Sathish Kumar | Elite Badminton Athlete & TOPS 2028 Prospect</title>
   <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./tailwind.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
   <!-- FontAwesome Icons -->
@@ -129,33 +129,56 @@
     </div>
   </section>
 
-  <!-- LIVE BWF RANKINGS -->
+  <!-- DYNAMIC BWF WORLD RANKINGS -->
   <section id="rankings" class="border-y border-slate-200 bg-white py-12 px-6">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Official Standing</span>
-        <h2 class="font-heading text-3xl font-bold text-slate-900 mt-1">Live Global Badminton Standings</h2>
+        <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">World Ranking</span>
+        <h2 class="font-heading text-3xl font-bold text-slate-900 mt-1">Current Badminton World Rankings</h2>
+        <p class="text-sm text-slate-600 mt-3">BWF and BAI rankings are maintained manually. Update the rank and date in <code>rankings.json</code> whenever you verify a new published ranking. Mixed Doubles rank belongs to a specific partnership.</p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
           <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">BWF Men's Singles</p>
-          <p class="text-3xl font-heading font-black text-blue-600 mt-2">#123 <span class="text-xs font-normal text-slate-500">(Peak #42)</span></p>
+          <p id="bwf-ms-rank" class="text-3xl font-heading font-black text-blue-600 mt-2">Loading...</p>
+          <p id="bwf-ms-points" class="text-xs text-slate-500 mt-2"></p>
+          <p id="bwf-ms-updated" class="text-xs text-slate-500 mt-2">Last updated: Date not set</p>
+          <a href="https://bwfbadminton.com/" target="_blank" rel="noopener noreferrer" class="inline-block text-xs text-blue-600 hover:underline mt-3">BWF official website</a>
         </div>
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
           <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">BWF Mixed Doubles</p>
-          <p class="text-3xl font-heading font-black text-blue-600 mt-2">#92 <span class="text-xs font-normal text-slate-500">(Peak #30)</span></p>
+          <p id="bwf-xd-rank" class="text-3xl font-heading font-black text-blue-600 mt-2">Loading...</p>
+         <!-- <p id="bwf-xd-partners" class="text-xs text-slate-500 mt-2">Finding current partnerships...</p>-->
+          <p id="bwf-xd-points" class="text-xs text-slate-500 mt-1"></p>
+          <p id="bwf-xd-updated" class="text-xs text-slate-500 mt-2">Last updated: Date not set</p>
+          <a href="https://bwfbadminton.com/" target="_blank" rel="noopener noreferrer" class="inline-block text-xs text-blue-600 hover:underline mt-3">BWF official website</a>
         </div>
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
-          <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">National Senior Rank</p>
+          <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">BAI Senior Men’s Singles</p>
           <p id="national-senior-rank" class="text-3xl font-heading font-black text-amber-600 mt-2">Loading...</p>
-          <p id="national-senior-rank-updated" class="text-xs text-slate-500 mt-2">Checking official rankings...</p>
-          <a href="https://www.badmintonindia.org/beta/players/rankings/senior/" target="_blank" rel="noopener noreferrer" class="inline-block text-xs text-blue-600 hover:underline mt-2">View Badminton Association of India rankings</a>
+          <p id="national-senior-peak" class="text-xs text-slate-500 mt-2">Peak: #1</p>
+          <p id="national-senior-rank-updated" class="text-xs text-slate-500 mt-2">Last updated: Date not set</p>
+          <a href="https://www.badmintonindia.org/beta/players/rankings/senior/" target="_blank" rel="noopener noreferrer" class="inline-block text-xs text-blue-600 hover:underline mt-2">Badminton Association of India</a>
         </div>
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
-          <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Official BWF ID</p>
-          <p class="text-3xl font-heading font-black text-slate-800 mt-2">79164</p>
+          <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">BAI Senior Mixed Doubles</p>
+          <p id="national-mixed-rank" class="text-3xl font-heading font-black text-amber-600 mt-2">Loading...</p>
+          <!--<p id="national-mixed-partners" class="text-xs text-slate-500 mt-2">Partner name not set</p>-->
+          <p id="national-mixed-peak" class="text-xs text-slate-500 mt-1"></p>
+          <p id="national-mixed-rank-updated" class="text-xs text-slate-500 mt-2">Last updated: Date not set</p>
+          <a href="https://www.badmintonindia.org/beta/players/rankings/senior/" target="_blank" rel="noopener noreferrer" class="inline-block text-xs text-blue-600 hover:underline mt-2">Badminton Association of India</a>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+          <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Player IDs</p>
+          <p class="text-xs text-slate-500 mt-3">BWF ID</p>
+          <p class="text-2xl font-heading font-black text-slate-800">79164</p>
+          <p class="text-xs text-slate-500 mt-3">BAI ID</p>
+          <p class="text-2xl font-heading font-black text-slate-800">12604</p>
+          <p class="text-xs text-slate-500 mt-2">Sathish Kumar Karunakaran</p>
         </div>
       </div>
+      <p id="bwf-rank-status" class="text-center text-xs text-slate-500 mt-6" role="status" aria-live="polite">Loading saved ranking values...</p>
+      <p class="text-center text-xs text-slate-400 mt-2">Rankings are updated manually. Dates shown are the dates entered in the ranking data file, not automatic update timestamps.</p>
     </div>
   </section>
 
@@ -624,37 +647,60 @@
   <!-- JAVASCRIPT CONTROLLERS -->
   <script>
 
-    // National Senior Rank: refresh every 12 hours.
-    // The official Badminton Association of India page may block browser requests (CORS).
-    // Configure the optional same-origin / serverless endpoint described below for reliable fetching.
-    const NATIONAL_RANK_URL = "https://www.badmintonindia.org/beta/players/rankings/senior/";
-    const NATIONAL_RANK_ENDPOINT = "/.netlify/functions/national-senior-rank";
-    const NATIONAL_RANK_REFRESH_MS = 12 * 60 * 60 * 1000;
-    const nationalRankElement = document.getElementById("national-senior-rank");
-    const nationalRankUpdatedElement = document.getElementById("national-senior-rank-updated");
+    // All rankings are maintained in rankings.json; no paid API or serverless function is needed.
+    function setRankText(id, value) {
+      const element = document.getElementById(id);
+      if (element) element.textContent = value;
+    }
 
-    async function refreshNationalSeniorRank() {
+    function formatRankingDate(value) {
+      if (!value) return "Date not set";
+      const parts = value.split("-").map(Number);
+      if (parts.length !== 3 || !parts[0] || !parts[1] || !parts[2]) return value;
+      const date = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2]));
+      return date.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+    }
+
+    async function refreshRankings() {
+      const status = document.getElementById("bwf-rank-status");
       try {
-        const response = await fetch(NATIONAL_RANK_ENDPOINT, {
-          headers: { "Accept": "application/json" },
-          cache: "no-store"
-        });
-        if (!response.ok) throw new Error("Rank service returned HTTP " + response.status);
-        const result = await response.json();
-        if (!result || !result.rank) throw new Error("Rank was not present in the response");
+        const response = await fetch("/rankings.json?v=" + Date.now(), { cache: "no-store" });
+        if (!response.ok) throw new Error("Could not load rankings.json (HTTP " + response.status + ")");
+        const data = await response.json();
+        const singles = data.bwf?.mensSingles || {};
+        const mixed = data.bwf?.mixedDoubles || {};
+        const national = data.bai?.seniorMensSingles || {};
+        const nationalMixed = data.bai?.seniorMixedDoubles || {};
 
-        nationalRankElement.textContent = "India #" + result.rank;
-        nationalRankUpdatedElement.textContent = "Last checked: " +
-          new Date(result.updatedAt || Date.now()).toLocaleString("en-IN");
+        setRankText("bwf-ms-rank", singles.rank ? "#" + singles.rank : "Not set");
+        setRankText("bwf-ms-points", singles.points != null && singles.points !== "" ? Number(singles.points).toLocaleString("en-IN") + " points" : (singles.peakRank ? "Peak: #" + singles.peakRank : ""));
+        setRankText("bwf-ms-updated", "Last updated: " + formatRankingDate(singles.updatedDate));
+
+        setRankText("bwf-xd-rank", mixed.rank ? "#" + mixed.rank : "Not set");
+        setRankText("bwf-xd-partners", mixed.partner ? "Partner: " + mixed.partner : "Partner name not set");
+        setRankText("bwf-xd-points", mixed.points != null && mixed.points !== "" ? Number(mixed.points).toLocaleString("en-IN") + " points" : (mixed.peakRank ? "Peak: #" + mixed.peakRank : ""));
+        setRankText("bwf-xd-updated", "Last updated: " + formatRankingDate(mixed.updatedDate));
+
+        setRankText("national-senior-rank", national.rank ? "India #" + national.rank : "Not set");
+        setRankText("national-senior-peak", national.peakRank ? "Peak: #" + national.peakRank : "Peak: Not set");
+        setRankText("national-senior-rank-updated", "Last updated: " + formatRankingDate(national.updatedDate));
+
+        setRankText("national-mixed-rank", nationalMixed.rank ? "India #" + nationalMixed.rank : "Not set");
+        setRankText("national-mixed-partners", nationalMixed.partner ? "Partner: " + nationalMixed.partner : "Partner name not set");
+        setRankText("national-mixed-peak", nationalMixed.peakRank ? "Peak: #" + nationalMixed.peakRank : "");
+        setRankText("national-mixed-rank-updated", "Last updated: " + formatRankingDate(nationalMixed.updatedDate));
+        if (status) status.textContent = "Rankings loaded from rankings.json. Update this file and redeploy whenever a published ranking changes.";
       } catch (error) {
-        nationalRankElement.textContent = "Unavailable";
-        nationalRankUpdatedElement.textContent = "Could not load live rank. Check the official rankings page.";
-        console.error("National senior ranking refresh failed:", error);
+        setRankText("bwf-ms-rank", "Unavailable");
+        setRankText("bwf-xd-rank", "Unavailable");
+        setRankText("national-senior-rank", "Unavailable");
+        setRankText("national-mixed-rank", "Unavailable");
+        if (status) status.textContent = "Could not load ranking data. Ensure rankings.json is in the same published folder as index.html.";
+        console.error("Ranking data load failed:", error);
       }
     }
 
-    refreshNationalSeniorRank();
-    setInterval(refreshNationalSeniorRank, NATIONAL_RANK_REFRESH_MS);
+    refreshRankings();
 
     // Tab Controller
     function switchTab(tabName) {

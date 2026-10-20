@@ -1,0 +1,37 @@
+{
+  "bwf": {
+    "mensSingles": {
+      "rank": 123,
+      "peakRank": 42,
+      "points": null,
+      "updatedDate": "2026-10-20"
+    },
+    "mixedDoubles": {
+      "rank": 92,
+      "peakRank": 30,
+      "partner": "",
+      "points": null,
+      "updatedDate": "2026-10-20"
+    }
+  },
+  "bai": {
+    "seniorMensSingles": {
+      "rank": 9,
+      "updatedDate": "2026-10-20",
+      "source": "https://www.badmintonindia.org/beta/players/rankings/senior/",
+      "peakRank": 1
+    },
+    "seniorMixedDoubles": {
+      "rank": 42,
+      "peakRank": 10,
+      "partner": "",
+      "updatedDate": "2026-10-20",
+      "source": "https://www.badmintonindia.org/beta/players/rankings/senior/"
+    }
+  },
+  "playerIds": {
+    "bwf": "79164",
+    "bai": "12604"
+  },
+  "instructions": "Replace rank, peakRank, partner, and updatedDate values after verifying the latest published rankings. Use null for unknown numeric values and an empty string for an unknown date/partner. Mixed Doubles ranking belongs to a specific partnership. Dates record when this data file was checked/updated, not necessarily the ranking publication date. BWF values 123 and 92 are carried over from the previous website and are placeholders until verified. BAI Senior Men’s Singles current rank 9 should be verified against the official list before publication; national peakRank is set to 1 as requested."
+}
